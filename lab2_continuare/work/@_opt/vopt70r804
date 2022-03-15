@@ -1,0 +1,124 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Facultate\An IV - Sem 2\TSC\Laborator\lab2\TSC\Lab2
+T_opt
+Z1 V9=d^9e;AC;M<Q6^Wk9alZ0
+Z2 04 19 4 work instr_register_test fast 0
+Z3 =1-3ca0677c1eca-6230bf8f-197-38a4
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.6d;45
+Z7 dD:\Facultate\An IV - Sem 2\TSC\Laborator\lab2\TSC\Lab2
+vinstr_register
+Z8 Mx1 6 sv_std 3 std
+Z9 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z10 Mx2 4 work 18 instr_register_pkg
+Z11 DXx4 work 18 instr_register_pkg 0 22 :JTF@fFZEAY;_aRJ`=BP83
+Z12 Izlgh4QQ_5WV`>EDVk6A=21
+Z13 V3z9A3Eb_VM7O2iR_@`ig80
+S1
+R7
+Z14 w1647257027
+Z15 8D:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/lab_dut/instr_register.sv
+Z16 FD:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/lab_dut/instr_register.sv
+L0 9
+Z17 OE;L;6.6d;45
+r1
+31
+Z18 o-work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z19 !s100 6^c4H@z>TICN;NJ=0DO5K2
+Z20 !s105 instr_register_sv_unit
+!s85 0
+Xinstr_register_pkg
+Z21 Mx1 24 C:\modeltech_6.6d\sv_std 3 std
+Z22 DXx24 C:\modeltech_6.6d\sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z23 I:JTF@fFZEAY;_aRJ`=BP83
+Z24 V:JTF@fFZEAY;_aRJ`=BP83
+S1
+R7
+Z25 w1647257031
+Z26 8D:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/lab_dut/instr_register_pkg.sv
+Z27 FD:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/lab_dut/instr_register_pkg.sv
+L0 5
+R17
+r1
+31
+R18
+Z28 !s100 V^fH5UCOegY6PL:OBDSV^3
+!s85 0
+vinstr_register_test
+R21
+R22
+Z29 Mx2 59 D:\Facultate\An IV - Sem 2\TSC\Laborator\lab2\TSC\Lab2\work 18 instr_register_pkg
+Z30 DXx59 D:\Facultate\An IV - Sem 2\TSC\Laborator\lab2\TSC\Lab2\work 18 instr_register_pkg 0 22 :JTF@fFZEAY;_aRJ`=BP83
+Z31 IAjH2SGN^;GiacJkG?m?hb0
+Z32 VEBCnBoI9@;K2I3Z?DhHY42
+Z33 !s105 instr_register_test_sv_unit
+S1
+R7
+Z34 w1647361916
+Z35 8D:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/lab01_testbench-interface/instr_register_test.sv
+Z36 FD:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/lab01_testbench-interface/instr_register_test.sv
+L0 8
+R17
+r1
+31
+R18
+Z37 !s100 J`>oH39?`Eb45Ul85XUUn1
+!s85 0
+Ytb_ifc
+R21
+R22
+R29
+R30
+Z38 !s100 BC84V@QW:MOJh<?G>;_C32
+Z39 I8=1FCZV]z3V;AEThG[L=P2
+Z40 V[2MM;6bj4cE27ld353ZQ90
+Z41 !s105 tb_ifc_sv_unit
+S1
+R7
+Z42 w1647257928
+Z43 8D:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/lab01_testbench-interface/tb_ifc.sv
+Z44 FD:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/lab01_testbench-interface/tb_ifc.sv
+L0 5
+R17
+r1
+31
+R18
+!s85 0
+vtest
+Z45 IURf_MOZ]`U[oEJ70C1G3U2
+Z46 Vk<3<[f=78GX=_HO53D;7>3
+R7
+Z47 w1614777644
+Z48 8D:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/test/test.v
+Z49 FD:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/test/test.v
+L0 7
+R17
+r1
+31
+R18
+Z50 !s100 UMPJ7EaNf`K3CO`bPi<`Q2
+!s85 0
+vtop
+R8
+R9
+R10
+R11
+Z51 IL:[M^UG7;MYRJ<9_5MF1;1
+Z52 Ve:gFW1CKLAXc^T:7k2HoD1
+Z53 !s105 top_sv_unit
+S1
+R7
+Z54 w1647361725
+Z55 8D:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/lab01_testbench-interface/top.sv
+Z56 FD:/Facultate/An IV - Sem 2/TSC/Laborator/lab2/TSC/Lab2/lab01_testbench-interface/top.sv
+L0 5
+R17
+r1
+31
+R18
+Z57 !s100 @AzPn7Q_>^47En02U1@5l1
+!s85 0
