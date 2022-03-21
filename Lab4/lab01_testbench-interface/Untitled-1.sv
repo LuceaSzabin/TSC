@@ -1,0 +1,36 @@
+
+ ***********************************************************
+ ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+ ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+ ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+***********************************************************
+
+Reseting the instruction register...
+ 
+ Writing values to register stack...
+ Writing to register location 0: 
+   opcode = 1 (PASSA)
+   operand_a = -12
+   operand_b = 4
+ 
+ Writing to register location 1: 
+   opcode = 3 (ADD)
+   operand_a = -9
+   operand_b = 9
+
+ Writing to register location 2: 
+   opcode = 5 (MULT)
+   operand_a = -15
+   operand_b = 13
+ 
+ 
+ Reading back the same register locations written...
+ Read from register location 0: 
+   opcode = 1 (PASSA)
+   operand_a = -12
+   operand_b = 4
+ 
+ Read from register location 1: 
+   opcode = 3 (ADD)
+   operand_a = -9
+   operand_b = 9

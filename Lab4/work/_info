@@ -1,0 +1,118 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ANUL IV\TSC\lab2
+T_opt
+Z1 VF>FJk:OaWTC7QW_`6<YaR2
+Z2 04 3 4 work top fast 0
+Z3 =1-54ee752d97e4-622f4601-19d-3cc0
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.6d;45
+Z7 dD:\ANUL IV\TSC\lab2
+T_opt1
+V0Oah>6?aTFbg?R>dFOki[2
+R2
+Z8 =1-1831bf976ae7-62307a17-b9-4148
+R4
+Z9 n@_opt1
+R6
+R7
+vinstr_register
+Z10 Mx1 6 sv_std 3 std
+Z11 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z12 Mx2 4 work 18 instr_register_pkg
+Z13 DXx4 work 18 instr_register_pkg 0 22 :JTF@fFZEAY;_aRJ`=BP83
+Z14 Izlgh4QQ_5WV`>EDVk6A=21
+Z15 V3z9A3Eb_VM7O2iR_@`ig80
+S1
+Z16 dF:\Facultate\TSC\lab2
+Z17 w1647340773
+Z18 8F:/Facultate/TSC/lab2/lab_dut/instr_register.sv
+Z19 FF:/Facultate/TSC/lab2/lab_dut/instr_register.sv
+L0 9
+Z20 OE;L;6.6d;45
+r1
+31
+Z21 o-work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z22 !s100 6^c4H@z>TICN;NJ=0DO5K2
+Z23 !s105 instr_register_sv_unit
+!s85 0
+Xinstr_register_pkg
+R10
+R11
+Z24 I:JTF@fFZEAY;_aRJ`=BP83
+Z25 V:JTF@fFZEAY;_aRJ`=BP83
+S1
+R16
+R17
+Z26 8F:/Facultate/TSC/lab2/lab_dut/instr_register_pkg.sv
+Z27 FF:/Facultate/TSC/lab2/lab_dut/instr_register_pkg.sv
+L0 5
+R20
+r1
+31
+R21
+Z28 !s100 V^fH5UCOegY6PL:OBDSV^3
+!s85 0
+vinstr_register_test
+R10
+R11
+R12
+R13
+Z29 II=73[U@iZbP:_4[hjRXcd2
+Z30 VEBCnBoI9@;K2I3Z?DhHY42
+S1
+R7
+Z31 w1647265264
+Z32 8D:/ANUL IV/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+Z33 FD:/ANUL IV/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+L0 8
+R20
+r1
+31
+R21
+Z34 !s105 instr_register_test_sv_unit
+Z35 !s100 ZPaS@1:G7iH;n_dX0C_ZC2
+!s85 0
+Ytb_ifc
+R10
+R11
+R12
+R13
+Z36 I8=1FCZV]z3V;AEThG[L=P2
+Z37 V[2MM;6bj4cE27ld353ZQ90
+S1
+R16
+R17
+Z38 8F:/Facultate/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+Z39 FF:/Facultate/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+L0 5
+R20
+r1
+31
+R21
+Z40 !s100 BC84V@QW:MOJh<?G>;_C32
+Z41 !s105 tb_ifc_sv_unit
+!s85 0
+vtop
+R10
+R11
+R12
+R13
+Z42 IW_Sf;ZCLoD]U63_m@V[nO2
+Z43 Ve:gFW1CKLAXc^T:7k2HoD1
+S1
+R16
+R17
+Z44 8F:/Facultate/TSC/lab2/lab01_testbench-interface/top.sv
+Z45 FF:/Facultate/TSC/lab2/lab01_testbench-interface/top.sv
+L0 5
+R20
+r1
+31
+R21
+Z46 !s100 ?<O=U]e:54>^RLK=BcKN;3
+Z47 !s105 top_sv_unit
+!s85 0

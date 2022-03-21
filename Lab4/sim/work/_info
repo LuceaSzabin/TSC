@@ -1,0 +1,44 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Facultate\AnIV-Sem2\TSC\Laborator\lab4\sim
+vinstr_register
+Z1 Mx1 6 sv_std 3 std
+Z2 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Mx2 4 work 18 instr_register_pkg
+DXx4 work 18 instr_register_pkg 0 22 7H^O;azX[A9[;U9T_4n_B2
+!s100 hn3_Wza;blUEWcPfei=700
+Il?C4UU7T<Dgnc2ZOa;6fG2
+V3z9A3Eb_VM7O2iR_@`ig80
+!s105 instr_register_sv_unit
+S1
+Z3 dD:\Facultate\AnIV-Sem2\TSC\Laborator\lab4\sim
+Z4 w1647340773
+8../lab_dut/instr_register.sv
+F../lab_dut/instr_register.sv
+L0 9
+Z5 OE;L;6.6d;45
+r1
+!s85 0
+31
+Z6 o-sv -work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z7 !s92 -sv -work work +incdir+../../lab_dut +incdir+../../lab_dut -L mtiAvm -L mtiOvm -L mtiUPF
+Xinstr_register_pkg
+R1
+R2
+!s100 CT>20gG0]oZl8PGJ6@31Y0
+I7H^O;azX[A9[;U9T_4n_B2
+V7H^O;azX[A9[;U9T_4n_B2
+S1
+R3
+R4
+8../lab_dut/instr_register_pkg.sv
+F../lab_dut/instr_register_pkg.sv
+L0 5
+R5
+r1
+!s85 0
+31
+R6
+R7

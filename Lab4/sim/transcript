@@ -1,0 +1,33 @@
+# Reading C:/modeltech_6.6d/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.6d Nov  1 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do run.do 
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling interface tb_ifc
+# ** Error: ../lab01_testbench-interface/tb_ifc.sv(13): near "logic": syntax error, unexpected "logic"
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# ** Error: C:/modeltech_6.6d/win32/vlog failed.
+# Error in macro ./run.do line 20
+# C:/modeltech_6.6d/win32/vlog failed.
+#     while executing
+# "vlog -sv -timescale "1ps/1ps" -work work       -f sources.txt"
+#     invoked from within
+# "if {$compile_on || [batch_mode] == 0} {
+#   vlib work
+#   vlog -sv -timescale "1ps/1ps" -work work       -f sources.txt
+# }"
+pwd
+# D:/Facultate/AnIV-Sem2/TSC/Laborator/lab4/sim
