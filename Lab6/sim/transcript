@@ -1,0 +1,125 @@
+# Reading C:/modeltech_6.6d/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.6d Nov  1 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do run.do 
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling interface tb_ifc
+# -- Compiling package instr_register_test_sv_unit
+# -- Importing package instr_register_pkg
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -novopt top 
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab5\sim\work.instr_register_pkg
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab5\sim\work.top
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab5\sim\work.tb_ifc
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab5\sim\work.instr_register_test_sv_unit
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab5\sim\work.instr_register_test
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab5\sim\work.instr_register
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/First_test.sv(78): Clocking block output lab2_if.cb.opcode is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/First_test.sv(79): Clocking block output lab2_if.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/First_test.sv(80): Clocking block output lab2_if.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/First_test.sv(77): Clocking block output lab2_if.cb.write_pointer is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/First_test.sv(84): Clocking block output lab2_if.cb.read_pointer is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# First header
+# 
+# Reseting the instruction register...
+# 
+# Writing values to register stack...
+# Writing to register location 0: 
+#   lab2_if.opcode = 1 (PASSA)
+#   lab2_if.operand_a = -12
+#   lab2_if.operand_b = 4
+# 
+# Writing to register location 1: 
+#   lab2_if.opcode = 3 (ADD)
+#   lab2_if.operand_a = -9
+#   lab2_if.operand_b = 9
+# 
+# Writing to register location 2: 
+#   lab2_if.opcode = 5 (MULT)
+#   lab2_if.operand_a = -15
+#   lab2_if.operand_b = 13
+# 
+# Writing to register location 3: 
+#   lab2_if.opcode = 2 (PASSB)
+#   lab2_if.operand_a = -8
+#   lab2_if.operand_b = 5
+# 
+# Writing to register location 4: 
+#   lab2_if.opcode = 5 (MULT)
+#   lab2_if.operand_a = -9
+#   lab2_if.operand_b = 1
+# 
+# 
+# Reading back the same register locations written...
+# Read from register location 3: 
+#   lab2_if.opcode = 2 (PASSB)
+#   lab2_if.operand_a = -8
+#   lab2_if.operand_b = 5
+#   lab2_if.result    = 5
+# 
+# Read from register location 2: 
+#   lab2_if.opcode = 5 (MULT)
+#   lab2_if.operand_a = -15
+#   lab2_if.operand_b = 13
+#   lab2_if.result    = -195
+# 
+# Read from register location 4: 
+#   lab2_if.opcode = 5 (MULT)
+#   lab2_if.operand_a = -9
+#   lab2_if.operand_b = 1
+#   lab2_if.result    = -9
+# 
+# Read from register location 2: 
+#   lab2_if.opcode = 5 (MULT)
+#   lab2_if.operand_a = -15
+#   lab2_if.operand_b = 13
+#   lab2_if.result    = -195
+# 
+# Read from register location 4: 
+#   lab2_if.opcode = 5 (MULT)
+#   lab2_if.operand_a = -9
+#   lab2_if.operand_b = 1
+#   lab2_if.result    = -9
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# ** Note: $finish    : ../lab01_testbench-interface/First_test.sv(53)
+#    Time: 120 ps  Iteration: 2  Instance: /top/test
