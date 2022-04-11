@@ -1,0 +1,113 @@
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling interface tb_ifc
+# -- Compiling package instr_register_test_sv_unit
+# -- Importing package instr_register_pkg
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -sv_seed 222333444 -novopt top 
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab7\sim\work.instr_register_pkg
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab7\sim\work.top
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab7\sim\work.tb_ifc
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab7\sim\work.instr_register_test_sv_unit
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab7\sim\work.instr_register_test
+# Refreshing D:\Facultate\AnIV-Sem2\TSC\Laborator\lab7\sim\work.instr_register
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/First_test.sv(78): Clocking block output lab2_if.cb.opcode is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/First_test.sv(79): Clocking block output lab2_if.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/First_test.sv(80): Clocking block output lab2_if.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/First_test.sv(77): Clocking block output lab2_if.cb.write_pointer is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/First_test.sv(84): Clocking block output lab2_if.cb.read_pointer is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# First header
+# 
+# Reseting the instruction register...
+# 
+# Writing values to register stack...
+# Writing to register location 0: 
+#   lab2_if.opcode = 1 (PASSA)
+#   lab2_if.operand_a = 0
+#   lab2_if.operand_b = 0
+# 
+# Writing to register location 1: 
+#   lab2_if.opcode = 4 (SUB)
+#   lab2_if.operand_a = 10
+#   lab2_if.operand_b = 12
+# 
+# Writing to register location 2: 
+#   lab2_if.opcode = 0 (ZERO)
+#   lab2_if.operand_a = -1
+#   lab2_if.operand_b = 10
+# 
+# Writing to register location 3: 
+#   lab2_if.opcode = 0 (ZERO)
+#   lab2_if.operand_a = 1
+#   lab2_if.operand_b = 13
+# 
+# Writing to register location 4: 
+#   lab2_if.opcode = 0 (ZERO)
+#   lab2_if.operand_a = 0
+#   lab2_if.operand_b = 8
+# 
+# 
+# Reading back the same register locations written...
+# Read from register location 3: 
+#   lab2_if.opcode = 0 (ZERO)
+#   lab2_if.operand_a = 1
+#   lab2_if.operand_b = 13
+#   lab2_if.result    = 0
+# 
+# Read from register location 2: 
+#   lab2_if.opcode = 0 (ZERO)
+#   lab2_if.operand_a = -1
+#   lab2_if.operand_b = 10
+#   lab2_if.result    = 0
+# 
+# Read from register location 2: 
+#   lab2_if.opcode = 0 (ZERO)
+#   lab2_if.operand_a = -1
+#   lab2_if.operand_b = 10
+#   lab2_if.result    = 0
+# 
+# Read from register location 2: 
+#   lab2_if.opcode = 0 (ZERO)
+#   lab2_if.operand_a = -1
+#   lab2_if.operand_b = 10
+#   lab2_if.result    = 0
+# 
+# Read from register location 2: 
+#   lab2_if.opcode = 0 (ZERO)
+#   lab2_if.operand_a = -1
+#   lab2_if.operand_b = 10
+#   lab2_if.result    = 0
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# ** Note: $finish    : ../lab01_testbench-interface/First_test.sv(53)
+#    Time: 120 ps  Iteration: 2  Instance: /top/test
