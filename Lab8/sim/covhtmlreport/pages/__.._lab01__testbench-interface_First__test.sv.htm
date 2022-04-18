@@ -1,0 +1,175 @@
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>ModelSim Coverage Report</title>
+  <link rel="StyleSheet" media="screen" href="../css/hdl2html.css"/>
+</head>
+<body id="hdl2html">
+  <tt><a name="1"/><span style="color:red">%s%%s%%s%%s%%s%1%s%%s%</span><span class="keyword">class</span>%s%First_test;<br/>
+<a name="2"/><span style="color:red">%s%%s%%s%%s%%s%2%s%%s%</span><br/>
+<a name="3"/><span style="color:red">%s%%s%%s%%s%%s%3%s%%s%</span>%t%%s%%s%<span class="keyword">int</span>%s%numberOfTransactions%s%=%s%100;<br/>
+<a name="4"/><span style="color:red">%s%%s%%s%%s%%s%4%s%%s%</span>%t%%s%%s%<span class="keyword">int</span>%s%errorCount;<br/>
+<a name="5"/><span style="color:red">%s%%s%%s%%s%%s%5%s%%s%</span>%s%%s%%s%%s%<span class="keyword">virtual</span>%s%tb_ifc.TEST%s%lab2_if;<br/>
+<a name="6"/><span style="color:red">%s%%s%%s%%s%%s%6%s%%s%</span>%s%%s%%s%%s%<br/>
+<a name="7"/><span style="color:red">%s%%s%%s%%s%%s%7%s%%s%</span>%s%%s%%s%%s%<span class="keyword">covergroup</span>%s%my_func_coverage;<br/>
+<a name="8"/><span style="color:red">%s%%s%%s%%s%%s%8%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">coverpoint</span>%s%lab2_if.cb.operand_a%s%{<br/>
+<a name="9"/><span style="color:red">%s%%s%%s%%s%%s%9%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">bins</span>%s%op_a_values_pos[]%s%=%s%{[1:15]};<br/>
+<a name="10"/><span style="color:red">%s%%s%%s%%s%10%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">bins</span>%s%op_a_zero%s%=%s%{0};<br/>
+<a name="11"/><span style="color:red">%s%%s%%s%%s%11%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">bins</span>%s%op_a_values_neg[]%s%=%s%{[-15:-1]};<br/>
+<a name="12"/><span style="color:red">%s%%s%%s%%s%12%s%%s%</span>%s%%s%%s%%s%%s%%s%}<br/>
+<a name="13"/><span style="color:red">%s%%s%%s%%s%13%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">coverpoint</span>%s%lab2_if.cb.operand_b%s%{<br/>
+<a name="14"/><span style="color:red">%s%%s%%s%%s%14%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">bins</span>%s%op_a_values_pos[]%s%=%s%{[0:15]};<br/>
+<a name="15"/><span style="color:red">%s%%s%%s%%s%15%s%%s%</span>%s%%s%%s%%s%%s%%s%}<br/>
+<a name="16"/><span style="color:red">%s%%s%%s%%s%16%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">coverpoint</span>%s%lab2_if.cb.opcode%s%{<br/>
+<a name="17"/><span style="color:red">%s%%s%%s%%s%17%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">bins</span>%s%op_a_values_pos[]%s%=%s%{[0:7]};<br/>
+<a name="18"/><span style="color:red">%s%%s%%s%%s%18%s%%s%</span>%s%%s%%s%%s%%s%%s%}<br/>
+<a name="19"/><span style="color:red">%s%%s%%s%%s%19%s%%s%</span>%s%%s%%s%%s%<span class="keyword">endgroup</span><br/>
+<a name="20"/><span style="color:red">%s%%s%%s%%s%20%s%%s%</span><br/>
+<a name="21"/><span style="color:red">%s%%s%%s%%s%21%s%%s%</span>%s%%s%%s%%s%<span class="keyword">function</span>%s%<span class="keyword">new</span>(<span class="keyword">virtual</span>%s%tb_ifc.TEST%s%lab_if);<br/>
+<a name="22"/><span style="color:red">%s%%s%%s%%s%22%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%lab2_if%s%=%s%lab_if;<br/>
+<a name="23"/><span style="color:red">%s%%s%%s%%s%23%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%my_func_coverage%s%=%s%<span class="keyword">new</span>();<br/>
+<a name="24"/><span style="color:red">%s%%s%%s%%s%24%s%%s%</span>%t%%t%%s%%s%%s%%s%<span class="keyword">this</span>.errorCount%s%=%s%0;<br/>
+<a name="25"/><span style="color:red">%s%%s%%s%%s%25%s%%s%</span>%s%%s%%s%%s%<span class="keyword">endfunction</span><br/>
+<a name="26"/><span style="color:red">%s%%s%%s%%s%26%s%%s%</span><br/>
+<a name="27"/><span style="color:red">%s%%s%%s%%s%27%s%%s%</span><br/>
+<a name="28"/><span style="color:red">%s%%s%%s%%s%28%s%%s%</span>%s%%s%%s%%s%<span class="keyword">task</span>%s%run();<br/>
+<a name="29"/><span style="color:red">%s%%s%%s%%s%29%s%%s%</span>%t%%s%%s%<span class="comment">//%s%Get%s%the%s%number%s%of%s%transactions</span><br/>
+<a name="30"/><span style="color:red">%s%%s%%s%%s%30%s%%s%</span>%t%%s%%s%<span class="keyword">if</span>%s%(!$value$plusargs(<span class="literal">"Number%s%of%s%transactions=%0d"</span>,%s%numberOfTransactions))%s%<span class="keyword">begin</span><br/>
+<a name="31"/><span style="color:red">%s%%s%%s%%s%31%s%%s%</span>%t%%t%numberOfTransactions%s%=%s%50;<br/>
+<a name="32"/><span style="color:red">%s%%s%%s%%s%32%s%%s%</span>%t%%s%%s%<span class="keyword">end</span><br/>
+<a name="33"/><span style="color:red">%s%%s%%s%%s%33%s%%s%</span>%t%%t%<br/>
+<a name="34"/><span style="color:red">%s%%s%%s%%s%34%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"\n\n***********************************************************"</span>);<br/>
+<a name="35"/><span style="color:red">%s%%s%%s%%s%35%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(%s%%s%%s%%s%<span class="literal">"***%s%%s%THIS%s%IS%s%NOT%s%A%s%SELF-CHECKING%s%TESTBENCH%s%(YET).%s%%s%YOU%s%%s%***"</span>);<br/>
+<a name="36"/><span style="color:red">%s%%s%%s%%s%36%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(%s%%s%%s%%s%<span class="literal">"***%s%%s%NEED%s%TO%s%VISUALLY%s%VERIFY%s%THAT%s%THE%s%OUTPUT%s%VALUES%s%%s%%s%%s%%s%***"</span>);<br/>
+<a name="37"/><span style="color:red">%s%%s%%s%%s%37%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(%s%%s%%s%%s%<span class="literal">"***%s%%s%MATCH%s%THE%s%INPUT%s%VALUES%s%FOR%s%EACH%s%REGISTER%s%LOCATION%s%%s%***"</span>);<br/>
+<a name="38"/><span style="color:red">%s%%s%%s%%s%38%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(%s%%s%%s%%s%<span class="literal">"***********************************************************"</span>);<br/>
+<a name="39"/><span style="color:red">%s%%s%%s%%s%39%s%%s%</span><br/>
+<a name="40"/><span style="color:red">%s%%s%%s%%s%40%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"First%s%header"</span>);<br/>
+<a name="41"/><span style="color:red">%s%%s%%s%%s%41%s%%s%</span>%s%%s%%s%%s%<br/>
+<a name="42"/><span style="color:red">%s%%s%%s%%s%42%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"\nReseting%s%the%s%instruction%s%register..."</span>);<br/>
+<a name="43"/><span style="color:red">%s%%s%%s%%s%43%s%%s%</span>%s%%s%%s%%s%%s%%s%lab2_if.cb.write_pointer%s%&lt;=%s%5'h00;%s%%s%%s%%s%%s%%s%%s%%s%%s%<span class="comment">//%s%initialize%s%write%s%pointer</span><br/>
+<a name="44"/><span style="color:red">%s%%s%%s%%s%44%s%%s%</span>%s%%s%%s%%s%%s%%s%lab2_if.cb.read_pointer%s%%s%&lt;=%s%5'h1F;%s%%s%%s%%s%%s%%s%%s%%s%%s%<span class="comment">//%s%initialize%s%read%s%pointer</span><br/>
+<a name="45"/><span style="color:red">%s%%s%%s%%s%45%s%%s%</span>%s%%s%%s%%s%%s%%s%lab2_if.cb.load_en%s%%s%%s%%s%%s%%s%%s%&lt;=%s%1'b0;%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%<span class="comment">//%s%initialize%s%load%s%control%s%line</span><br/>
+<a name="46"/><span style="color:red">%s%%s%%s%%s%46%s%%s%</span>%s%%s%%s%%s%%s%%s%lab2_if.cb.reset_n%s%%s%%s%%s%%s%%s%%s%&lt;=%s%1'b0;%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%<span class="comment">//%s%assert%s%reset_n%s%(active%s%low)</span><br/>
+<a name="47"/><span style="color:red">%s%%s%%s%%s%47%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">repeat</span>%s%(2)%s%@(<span class="keyattr">posedge</span>%s%lab2_if.cb);%s%%s%%s%%s%%s%<span class="comment">//%s%hold%s%in%s%reset%s%for%s%2%s%clock%s%cycles</span><br/>
+<a name="48"/><span style="color:red">%s%%s%%s%%s%48%s%%s%</span>%s%%s%%s%%s%%s%%s%lab2_if.cb.reset_n%s%%s%%s%%s%%s%%s%%s%&lt;=%s%1'b1;%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%<span class="comment">//%s%deassert%s%reset_n%s%(active%s%low)</span><br/>
+<a name="49"/><span style="color:red">%s%%s%%s%%s%49%s%%s%</span><br/>
+<a name="50"/><span style="color:red">%s%%s%%s%%s%50%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"\nWriting%s%values%s%to%s%register%s%stack..."</span>);<br/>
+<a name="51"/><span style="color:red">%s%%s%%s%%s%51%s%%s%</span>%s%%s%%s%%s%%s%%s%@(<span class="keyattr">posedge</span>%s%lab2_if.cb)%s%lab2_if.cb.load_en%s%&lt;=%s%1'b1;%s%%s%<span class="comment">//%s%enable%s%writing%s%to%s%register</span><br/>
+<a name="52"/><span style="color:red">%s%%s%%s%%s%52%s%%s%</span><br/>
+<a name="53"/><span style="color:red">%s%%s%%s%%s%53%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">repeat</span>%s%(numberOfTransactions)%s%<span class="keyword">begin</span><br/>
+<a name="54"/><span style="color:red">%s%%s%%s%%s%54%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%@(<span class="keyattr">posedge</span>%s%lab2_if.cb)%s%randomize_transaction;<br/>
+<a name="55"/><span style="color:red">%s%%s%%s%%s%55%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%@(<span class="keyattr">negedge</span>%s%lab2_if.cb)%s%print_transaction;<br/>
+<a name="56"/><span style="color:red">%s%%s%%s%%s%56%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%my_func_coverage.sample();<br/>
+<a name="57"/><span style="color:red">%s%%s%%s%%s%57%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="58"/><span style="color:red">%s%%s%%s%%s%58%s%%s%</span>%s%%s%%s%%s%%s%%s%@(<span class="keyattr">posedge</span>%s%lab2_if.cb)%s%lab2_if.cb.load_en%s%&lt;=%s%1'b0;%s%%s%<span class="comment">//%s%turn-off%s%writing%s%to%s%register</span><br/>
+<a name="59"/><span style="color:red">%s%%s%%s%%s%59%s%%s%</span><br/>
+<a name="60"/><span style="color:red">%s%%s%%s%%s%60%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="comment">//%s%read%s%back%s%and%s%display%s%same%s%three%s%register%s%locations</span><br/>
+<a name="61"/><span style="color:red">%s%%s%%s%%s%61%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"\nReading%s%back%s%the%s%same%s%register%s%locations%s%written..."</span>);<br/>
+<a name="62"/><span style="color:red">%s%%s%%s%%s%62%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">for</span>%s%(<span class="keyword">int</span>%s%i=0;%s%i&lt;numberOfTransactions;%s%i++)%s%<span class="keyword">begin</span><br/>
+<a name="63"/><span style="color:red">%s%%s%%s%%s%63%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="comment">//%s%later%s%labs%s%will%s%replace%s%this%s%loop%s%with%s%iterating%s%through%s%a</span><br/>
+<a name="64"/><span style="color:red">%s%%s%%s%%s%64%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="comment">//%s%scoreboard%s%to%s%determine%s%which%s%addresses%s%were%s%written%s%and</span><br/>
+<a name="65"/><span style="color:red">%s%%s%%s%%s%65%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="comment">//%s%the%s%expected%s%values%s%to%s%be%s%read%s%back</span><br/>
+<a name="66"/><span style="color:red">%s%%s%%s%%s%66%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%@(<span class="keyattr">posedge</span>%s%lab2_if.cb)%s%lab2_if.cb.read_pointer%s%&lt;=%s%i;<br/>
+<a name="67"/><span style="color:red">%s%%s%%s%%s%67%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%@(<span class="keyattr">negedge</span>%s%lab2_if.cb)%s%print_results;<br/>
+<a name="68"/><span style="color:red">%s%%s%%s%%s%68%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="69"/><span style="color:red">%s%%s%%s%%s%69%s%%s%</span><br/>
+<a name="70"/><span style="color:red">%s%%s%%s%%s%70%s%%s%</span>%s%%s%%s%%s%%s%%s%@(<span class="keyattr">posedge</span>%s%lab2_if.cb);<br/>
+<a name="71"/><span style="color:red">%s%%s%%s%%s%71%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"\n***********************************************************"</span>);<br/>
+<a name="72"/><span style="color:red">%s%%s%%s%%s%72%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(%s%%s%<span class="literal">"***%s%%s%THIS%s%IS%s%NOT%s%A%s%SELF-CHECKING%s%TESTBENCH%s%(YET).%s%%s%YOU%s%%s%***"</span>);<br/>
+<a name="73"/><span style="color:red">%s%%s%%s%%s%73%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(%s%%s%<span class="literal">"***%s%%s%NEED%s%TO%s%VISUALLY%s%VERIFY%s%THAT%s%THE%s%OUTPUT%s%VALUES%s%%s%%s%%s%%s%***"</span>);<br/>
+<a name="74"/><span style="color:red">%s%%s%%s%%s%74%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(%s%%s%<span class="literal">"***%s%%s%MATCH%s%THE%s%INPUT%s%VALUES%s%FOR%s%EACH%s%REGISTER%s%LOCATION%s%%s%***"</span>);<br/>
+<a name="75"/><span style="color:red">%s%%s%%s%%s%75%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(%s%%s%<span class="literal">"***********************************************************\n"</span>);<br/>
+<a name="76"/><span style="color:red">%s%%s%%s%%s%76%s%%s%</span>%s%%s%%s%%s%<br/>
+<a name="77"/><span style="color:red">%s%%s%%s%%s%77%s%%s%</span>%t%%t%<span class="comment">//%s%Error%s%evaluation</span><br/>
+<a name="78"/><span style="color:red">%s%%s%%s%%s%78%s%%s%</span>%t%%s%%s%<span class="keyword">if</span>%s%(<span class="keyword">this</span>.errorCount%s%==%s%0)%s%<span class="keyword">begin</span><br/>
+<a name="79"/><span style="color:red">%s%%s%%s%%s%79%s%%s%</span>%t%%s%%s%%s%%s%$display(<span class="literal">"Test%s%passed"</span>);<br/>
+<a name="80"/><span style="color:red">%s%%s%%s%%s%80%s%%s%</span>%t%%s%%s%<span class="keyword">end</span>%s%<span class="keyword">else</span>%s%<span class="keyword">if</span>%s%(<span class="keyword">this</span>.errorCount%s%&gt;%s%0)%s%<span class="keyword">begin</span><br/>
+<a name="81"/><span style="color:red">%s%%s%%s%%s%81%s%%s%</span>%t%%s%%s%%s%%s%$display(<span class="literal">"Test%s%not%s%passed%s%(%0d%s%errors)"</span>,%s%<span class="keyword">this</span>.errorCount);<br/>
+<a name="82"/><span style="color:red">%s%%s%%s%%s%82%s%%s%</span>%t%%s%%s%<span class="keyword">end</span><br/>
+<a name="83"/><span style="color:red">%s%%s%%s%%s%83%s%%s%</span>%t%%s%%s%<br/>
+<a name="84"/><span style="color:red">%s%%s%%s%%s%84%s%%s%</span>%t%%s%%s%$finish;<br/>
+<a name="85"/><span style="color:red">%s%%s%%s%%s%85%s%%s%</span>%t%<span class="keyword">endtask</span><br/>
+<a name="86"/><span style="color:red">%s%%s%%s%%s%86%s%%s%</span><br/>
+<a name="87"/><span style="color:red">%s%%s%%s%%s%87%s%%s%</span>%s%%s%%s%%s%<span class="keyword">function</span>%s%<span class="keyword">void</span>%s%randomize_transaction;<br/>
+<a name="88"/><span style="color:red">%s%%s%%s%%s%88%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="comment">//%s%A%s%later%s%lab%s%will%s%replace%s%this%s%function%s%with%s%SystemVerilog</span><br/>
+<a name="89"/><span style="color:red">%s%%s%%s%%s%89%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="comment">//%s%constrained%s%random%s%values</span><br/>
+<a name="90"/><span style="color:red">%s%%s%%s%%s%90%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="comment">//</span><br/>
+<a name="91"/><span style="color:red">%s%%s%%s%%s%91%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="comment">//%s%The%s%stactic%s%temp%s%variable%s%is%s%required%s%in%s%order%s%to%s%write%s%to%s%fixed</span><br/>
+<a name="92"/><span style="color:red">%s%%s%%s%%s%92%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="comment">//%s%addresses%s%of%s%0,%s%1%s%and%s%2.%s%%s%This%s%will%s%be%s%replaceed%s%with%s%randomizeed</span><br/>
+<a name="93"/><span style="color:red">%s%%s%%s%%s%93%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="comment">//%s%write_pointer%s%values%s%in%s%a%s%later%s%lab</span><br/>
+<a name="94"/><span style="color:red">%s%%s%%s%%s%94%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="comment">//</span><br/>
+<a name="95"/><span style="color:red">%s%%s%%s%%s%95%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">static</span>%s%<span class="keyword">int</span>%s%temp%s%=%s%0;<br/>
+<a name="96"/><span style="color:red">%s%%s%%s%%s%96%s%%s%</span>%s%%s%%s%%s%%s%%s%lab2_if.cb.operand_a%s%%s%%s%%s%%s%&lt;=%s%$<span class="keyword">signed</span>($urandom())%16;%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%<span class="comment">//%s%between%s%-15%s%and%s%15</span><br/>
+<a name="97"/><span style="color:red">%s%%s%%s%%s%97%s%%s%</span>%s%%s%%s%%s%%s%%s%lab2_if.cb.operand_b%s%%s%%s%%s%%s%&lt;=%s%$<span class="keyword">unsigned</span>($urandom())%16;%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%<span class="comment">//%s%between%s%0%s%and%s%15</span><br/>
+<a name="98"/><span style="color:red">%s%%s%%s%%s%98%s%%s%</span>%s%%s%%s%%s%%s%%s%lab2_if.cb.opcode%s%%s%%s%%s%%s%%s%%s%%s%&lt;=%s%opcode_t'($<span class="keyword">unsigned</span>($urandom())%8);%s%%s%<span class="comment">//%s%between%s%0%s%and%s%7,%s%cast%s%to%s%opcode_t%s%type</span><br/>
+<a name="99"/><span style="color:red">%s%%s%%s%%s%99%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%<span class="comment">//%s%look%s%in%s%instr_register_pkg</span><br/>
+<a name="100"/><span style="color:red">%s%%s%%s%100%s%%s%</span>%s%%s%%s%%s%%s%%s%lab2_if.cb.write_pointer%s%&lt;=%s%temp++;<br/>
+<a name="101"/><span style="color:red">%s%%s%%s%101%s%%s%</span>%s%%s%%s%%s%<span class="keyword">endfunction</span>:%s%randomize_transaction<br/>
+<a name="102"/><span style="color:red">%s%%s%%s%102%s%%s%</span><br/>
+<a name="103"/><span style="color:red">%s%%s%%s%103%s%%s%</span>%s%%s%%s%%s%<span class="keyword">function</span>%s%<span class="keyword">void</span>%s%print_transaction;<br/>
+<a name="104"/><span style="color:red">%s%%s%%s%104%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"Writing%s%to%s%register%s%location%s%%0d:%s%"</span>,%s%lab2_if.cb.write_pointer);<br/>
+<a name="105"/><span style="color:red">%s%%s%%s%105%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"%s%%s%lab2_if.opcode%s%=%s%%0d%s%(%s)"</span>,%s%lab2_if.cb.opcode,%s%lab2_if.cb.opcode.name);<br/>
+<a name="106"/><span style="color:red">%s%%s%%s%106%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"%s%%s%lab2_if.operand_a%s%=%s%%0d"</span>,%s%%s%%s%lab2_if.cb.operand_a);<br/>
+<a name="107"/><span style="color:red">%s%%s%%s%107%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"%s%%s%lab2_if.operand_b%s%=%s%%0d\n"</span>,%s%lab2_if.cb.operand_b);<br/>
+<a name="108"/><span style="color:red">%s%%s%%s%108%s%%s%</span>%s%%s%%s%%s%<span class="keyword">endfunction</span>:%s%print_transaction<br/>
+<a name="109"/><span style="color:red">%s%%s%%s%109%s%%s%</span><br/>
+<a name="110"/><span style="color:red">%s%%s%%s%110%s%%s%</span>%s%%s%%s%%s%<span class="keyword">function</span>%s%<span class="keyword">void</span>%s%print_results;<br/>
+<a name="111"/><span style="color:red">%s%%s%%s%111%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"Read%s%from%s%register%s%location%s%%0d:%s%"</span>,%s%lab2_if.cb.read_pointer);<br/>
+<a name="112"/><span style="color:red">%s%%s%%s%112%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"%s%%s%lab2_if.opcode%s%=%s%%0d%s%(%s)"</span>,%s%lab2_if.cb.instruction_word.opc,%s%lab2_if.cb.instruction_word.opc.name);<br/>
+<a name="113"/><span style="color:red">%s%%s%%s%113%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"%s%%s%lab2_if.operand_a%s%=%s%%0d"</span>,%s%%s%%s%lab2_if.cb.instruction_word.op_a);<br/>
+<a name="114"/><span style="color:red">%s%%s%%s%114%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"%s%%s%lab2_if.operand_b%s%=%s%%0d"</span>,%s%lab2_if.cb.instruction_word.op_b);<br/>
+<a name="115"/><span style="color:red">%s%%s%%s%115%s%%s%</span>%s%%s%%s%%s%%s%%s%$display(<span class="literal">"%s%%s%lab2_if.result%s%%s%%s%%s%=%s%%0d\n"</span>,%s%lab2_if.cb.instruction_word.result);<br/>
+<a name="116"/><span style="color:red">%s%%s%%s%116%s%%s%</span>%s%%s%%s%%s%%s%<span class="keyword">case</span>%s%(lab2_if.cb.instruction_word.opc.name)<br/>
+<a name="117"/><span style="color:red">%s%%s%%s%117%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="literal">"PASSA"</span>%s%:%s%<span class="keyword">begin</span><br/>
+<a name="118"/><span style="color:red">%s%%s%%s%118%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">if</span>%s%(lab2_if.cb.instruction_word.result%s%!=%s%lab2_if.cb.instruction_word.op_a)%s%<span class="keyword">begin</span><br/>
+<a name="119"/><span style="color:red">%s%%s%%s%119%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%$<span class="keyvalu">error</span>(<span class="literal">"PASSA%s%operation%s%error:%s%Expected%s%result%s%=%s%%0d%s%Actual%s%result%s%=%s%%0d\n"</span>,%s%lab2_if.cb.instruction_word.op_a,%s%lab2_if.cb.instruction_word.result);<br/>
+<a name="120"/><span style="color:red">%s%%s%%s%120%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%errorCount%s%+=%s%1;<br/>
+<a name="121"/><span style="color:red">%s%%s%%s%121%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="122"/><span style="color:red">%s%%s%%s%122%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="123"/><span style="color:red">%s%%s%%s%123%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="literal">"PASSB"</span>%s%:%s%<span class="keyword">begin</span><br/>
+<a name="124"/><span style="color:red">%s%%s%%s%124%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">if</span>%s%(lab2_if.cb.instruction_word.result%s%!=%s%lab2_if.cb.instruction_word.op_b)%s%<span class="keyword">begin</span><br/>
+<a name="125"/><span style="color:red">%s%%s%%s%125%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%$<span class="keyvalu">error</span>(<span class="literal">"PASSB%s%operation%s%error:%s%Expected%s%result%s%=%s%%0d%s%Actual%s%result%s%=%s%%0d\n"</span>,%s%lab2_if.cb.instruction_word.op_b,%s%lab2_if.cb.instruction_word.result);<br/>
+<a name="126"/><span style="color:red">%s%%s%%s%126%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%errorCount%s%+=%s%1;<br/>
+<a name="127"/><span style="color:red">%s%%s%%s%127%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="128"/><span style="color:red">%s%%s%%s%128%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="129"/><span style="color:red">%s%%s%%s%129%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="literal">"ADD"</span>%s%:%s%<span class="keyword">begin</span><br/>
+<a name="130"/><span style="color:red">%s%%s%%s%130%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">if</span>%s%(lab2_if.cb.instruction_word.result%s%!=%s%$<span class="keyword">signed</span>(lab2_if.cb.instruction_word.op_a%s%+%s%lab2_if.cb.instruction_word.op_b))%s%<span class="keyword">begin</span><br/>
+<a name="131"/><span style="color:red">%s%%s%%s%131%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%$<span class="keyvalu">error</span>(<span class="literal">"ADD%s%operation%s%error:%s%Expected%s%result%s%=%s%%0d%s%Actual%s%result%s%=%s%%0d\n"</span>,%s%$<span class="keyword">signed</span>(lab2_if.cb.instruction_word.op_a%s%+%s%lab2_if.cb.instruction_word.op_b),%s%lab2_if.cb.instruction_word.result);<br/>
+<a name="132"/><span style="color:red">%s%%s%%s%132%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%errorCount%s%+=%s%1;<br/>
+<a name="133"/><span style="color:red">%s%%s%%s%133%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="134"/><span style="color:red">%s%%s%%s%134%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="135"/><span style="color:red">%s%%s%%s%135%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="literal">"SUB"</span>%s%:%s%<span class="keyword">begin</span><br/>
+<a name="136"/><span style="color:red">%s%%s%%s%136%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">if</span>%s%(lab2_if.cb.instruction_word.result%s%!=%s%$<span class="keyword">signed</span>(lab2_if.cb.instruction_word.op_a%s%-%s%lab2_if.cb.instruction_word.op_b))%s%<span class="keyword">begin</span><br/>
+<a name="137"/><span style="color:red">%s%%s%%s%137%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%$<span class="keyvalu">error</span>(<span class="literal">"SUB%s%operation%s%error:%s%Expected%s%result%s%=%s%%0d%s%Actual%s%result%s%=%s%%0d\n"</span>,%s%$<span class="keyword">signed</span>(lab2_if.cb.instruction_word.op_a%s%-%s%lab2_if.cb.instruction_word.op_b),%s%lab2_if.cb.instruction_word.result);<br/>
+<a name="138"/><span style="color:red">%s%%s%%s%138%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%errorCount%s%+=%s%1;<br/>
+<a name="139"/><span style="color:red">%s%%s%%s%139%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="140"/><span style="color:red">%s%%s%%s%140%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="141"/><span style="color:red">%s%%s%%s%141%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="literal">"MULT"</span>%s%:%s%<span class="keyword">begin</span><br/>
+<a name="142"/><span style="color:red">%s%%s%%s%142%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">if</span>%s%(lab2_if.cb.instruction_word.result%s%!=%s%$<span class="keyword">signed</span>(lab2_if.cb.instruction_word.op_a%s%*%s%lab2_if.cb.instruction_word.op_b))%s%<span class="keyword">begin</span><br/>
+<a name="143"/><span style="color:red">%s%%s%%s%143%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%$<span class="keyvalu">error</span>(<span class="literal">"MULT%s%operation%s%error:%s%Expected%s%result%s%=%s%%0d%s%Actual%s%result%s%=%s%%0d\n"</span>,%s%$<span class="keyword">signed</span>(lab2_if.cb.instruction_word.op_a%s%*%s%lab2_if.cb.instruction_word.op_b),%s%lab2_if.cb.instruction_word.result);<br/>
+<a name="144"/><span style="color:red">%s%%s%%s%144%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%errorCount%s%+=%s%1;<br/>
+<a name="145"/><span style="color:red">%s%%s%%s%145%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="146"/><span style="color:red">%s%%s%%s%146%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="147"/><span style="color:red">%s%%s%%s%147%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="literal">"DIV"</span>%s%:%s%<span class="keyword">begin</span><br/>
+<a name="148"/><span style="color:red">%s%%s%%s%148%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">if</span>%s%(lab2_if.cb.instruction_word.result%s%!=%s%$<span class="keyword">signed</span>(lab2_if.cb.instruction_word.op_a%s%/%s%lab2_if.cb.instruction_word.op_b))%s%<span class="keyword">begin</span><br/>
+<a name="149"/><span style="color:red">%s%%s%%s%149%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%$<span class="keyvalu">error</span>(<span class="literal">"DIV%s%operation%s%error:%s%Expected%s%result%s%=%s%%0d%s%Actual%s%result%s%=%s%%0d\n"</span>,%s%$<span class="keyword">signed</span>(lab2_if.cb.instruction_word.op_a%s%/%s%lab2_if.cb.instruction_word.op_b),%s%lab2_if.cb.instruction_word.result);<br/>
+<a name="150"/><span style="color:red">%s%%s%%s%150%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%errorCount%s%+=%s%1;<br/>
+<a name="151"/><span style="color:red">%s%%s%%s%151%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="152"/><span style="color:red">%s%%s%%s%152%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="153"/><span style="color:red">%s%%s%%s%153%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="literal">"MOD"</span>%s%:%s%<span class="keyword">begin</span><br/>
+<a name="154"/><span style="color:red">%s%%s%%s%154%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">if</span>%s%(lab2_if.cb.instruction_word.result%s%!=%s%$<span class="keyword">signed</span>(lab2_if.cb.instruction_word.op_a%s%%%s%lab2_if.cb.instruction_word.op_b))%s%<span class="keyword">begin</span><br/>
+<a name="155"/><span style="color:red">%s%%s%%s%155%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%$<span class="keyvalu">error</span>(<span class="literal">"MOD%s%operation%s%error:%s%Expected%s%result%s%=%s%%0d%s%Actual%s%result%s%=%s%%0d\n"</span>,%s%$<span class="keyword">signed</span>(lab2_if.cb.instruction_word.op_a%s%%%s%lab2_if.cb.instruction_word.op_b),%s%lab2_if.cb.instruction_word.result);<br/>
+<a name="156"/><span style="color:red">%s%%s%%s%156%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%errorCount%s%+=%s%1;<br/>
+<a name="157"/><span style="color:red">%s%%s%%s%157%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="158"/><span style="color:red">%s%%s%%s%158%s%%s%</span>%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="159"/><span style="color:red">%s%%s%%s%159%s%%s%</span>%s%%s%%s%%s%%s%<span class="keyword">endcase</span><br/>
+<a name="160"/><span style="color:red">%s%%s%%s%160%s%%s%</span>%s%%s%%s%%s%<span class="keyword">endfunction</span>:%s%print_results<br/>
+<a name="161"/><span style="color:red">%s%%s%%s%161%s%%s%</span>%s%%s%<br/>
+<a name="162"/><span style="color:red">%s%%s%%s%162%s%%s%</span>%s%<span class="keyword">endclass</span><br/>
+</tt>
+<script type="text/javascript" src="../scripts/buildsrcpage.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ANUL IV\TSC\lab2
+T_opt
+Z1 VF>FJk:OaWTC7QW_`6<YaR2
+Z2 04 3 4 work top fast 0
+Z3 =1-54ee752d97e4-622f4601-19d-3cc0
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.6d;45
+Z7 dD:\ANUL IV\TSC\lab2
+vinstr_register
+Z8 Mx1 24 C:\modeltech_6.6d\sv_std 3 std
+Z9 DXx24 C:\modeltech_6.6d\sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z10 Mx2 24 D:\ANUL IV\TSC\lab2\work 18 instr_register_pkg
+Z11 DXx24 D:\ANUL IV\TSC\lab2\work 18 instr_register_pkg 0 22 :JTF@fFZEAY;_aRJ`=BP83
+Z12 Izlgh4QQ_5WV`>EDVk6A=21
+Z13 V3z9A3Eb_VM7O2iR_@`ig80
+S1
+R7
+Z14 w1647261192
+Z15 8D:/ANUL IV/TSC/lab2/lab_dut/instr_register.sv
+Z16 FD:/ANUL IV/TSC/lab2/lab_dut/instr_register.sv
+L0 9
+Z17 OE;L;6.6d;45
+r1
+31
+Z18 o-work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z19 !s100 6^c4H@z>TICN;NJ=0DO5K2
+Z20 !s105 instr_register_sv_unit
+!s85 0
+Xinstr_register_pkg
+R8
+R9
+Z21 I:JTF@fFZEAY;_aRJ`=BP83
+Z22 V:JTF@fFZEAY;_aRJ`=BP83
+S1
+R7
+Z23 w1647261127
+Z24 8D:/ANUL IV/TSC/lab2/lab_dut/instr_register_pkg.sv
+Z25 FD:/ANUL IV/TSC/lab2/lab_dut/instr_register_pkg.sv
+L0 5
+R17
+r1
+31
+R18
+Z26 !s100 V^fH5UCOegY6PL:OBDSV^3
+!s85 0
+vinstr_register_test
+R8
+R9
+R10
+R11
+Z27 II=73[U@iZbP:_4[hjRXcd2
+Z28 VEBCnBoI9@;K2I3Z?DhHY42
+Z29 !s105 instr_register_test_sv_unit
+S1
+R7
+Z30 w1647265264
+Z31 8D:/ANUL IV/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+Z32 FD:/ANUL IV/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+L0 8
+R17
+r1
+31
+R18
+Z33 !s100 ZPaS@1:G7iH;n_dX0C_ZC2
+!s85 0
+Ytb_ifc
+R8
+R9
+R10
+R11
+Z34 I8=1FCZV]z3V;AEThG[L=P2
+Z35 V[2MM;6bj4cE27ld353ZQ90
+S1
+R7
+Z36 w1647263839
+Z37 8D:/ANUL IV/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+Z38 FD:/ANUL IV/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+L0 5
+R17
+r1
+31
+R18
+Z39 !s100 BC84V@QW:MOJh<?G>;_C32
+Z40 !s105 tb_ifc_sv_unit
+!s85 0
+vtop
+R8
+R9
+R10
+R11
+Z41 IW_Sf;ZCLoD]U63_m@V[nO2
+Z42 Ve:gFW1CKLAXc^T:7k2HoD1
+S1
+R7
+Z43 w1647264582
+Z44 8D:/ANUL IV/TSC/lab2/lab01_testbench-interface/top.sv
+Z45 FD:/ANUL IV/TSC/lab2/lab01_testbench-interface/top.sv
+L0 5
+R17
+r1
+31
+R18
+Z46 !s100 ?<O=U]e:54>^RLK=BcKN;3
+Z47 !s105 top_sv_unit
+!s85 0
